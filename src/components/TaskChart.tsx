@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card, Select, Button, Space, Typography, Row, Col, Statistic } from 'antd';
+import { Card, Select, Button, Space, Row, Col, Statistic } from 'antd';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store';
 import { setFilterCategory } from '../store/tasksSlice';
 
 const { Option } = Select;
-const { Title } = Typography;
 
 const TaskChart: React.FC = () => {
   const dispatch = useDispatch();

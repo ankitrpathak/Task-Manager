@@ -30,7 +30,7 @@ const TaskCalendar: React.FC = () => {
         {listData.map((item, index) => (
           <li key={index}>
             <Badge 
-              status={item.type as any} 
+              status={item.type as 'success' | 'warning' | 'error' | 'info'}
               text={
                 <span className="text-xs truncate block max-w-[100px]">
                   {item.content}
