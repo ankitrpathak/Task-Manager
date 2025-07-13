@@ -1,0 +1,82 @@
+@import 'antd/dist/reset.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the task calendar */
+.task-calendar .ant-picker-calendar-full .ant-picker-panel {
+  background: transparent;
+}
+
+.task-calendar .ant-picker-calendar-full .ant-picker-calendar-date-today {
+  border-color: #1890ff;
+}
+
+.task-calendar .events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-calendar .events li {
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+/* Custom modal styles */
+.task-form-modal .ant-modal-content {
+  border-radius: 12px;
+}
+
+.task-form-modal .ant-modal-header {
+  border-radius: 12px 12px 0 0;
+}
+
+/* Custom animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ant-list-item {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Custom hover effects */
+.ant-btn:hover {
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
